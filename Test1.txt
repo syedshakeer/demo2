@@ -1,0 +1,60 @@
+welcome to Git
+
+find maximum consecutive repeating character in string.
+Input : str = "STTAARRRSS"
+Output :R
+
+int a=0;
+HasTable hs=new HasTable();
+
+for(int i=0;i<str.Length-1;i++)
+{
+
+    for(int j=0;j<str.Length-1;j++)
+      {
+           if(str[i]==str[j+1])
+           {
+               a=a+1;
+           }
+      }
+      if(a>1)
+      {
+        hs.Add(str[i],a);
+      }
+}
+
+hs.sort();
+
+
+
+string value=hs[hs.Length-1];
+
+
+
+
+int temp=0
+
+int [] a=new  a[3,4,2];
+
+
+for(int i=0;i<a.Length-1;i++)
+{
+
+    for(int j=0;j<a.Length-1;j++)
+      {
+         if(a[i]>a[j+1])
+          {
+             temp[i]=a[j+1];
+             a[j+1]=j[i];
+             a[i]=temp[i];
+         }
+         
+      }
+     
+}
+
+
+
+
+
+
